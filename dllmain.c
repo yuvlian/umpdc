@@ -40,10 +40,10 @@ void load_config() {
     if (last_slash) {
         *last_slash = '\0';
     }
-    strcat_s(ini_path, MAX_PATH, "\\umpdc.ini");
+    strcat_s(ini_path, MAX_PATH, "\\echium.ini");
 
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "SDK_URL",
         "http://127.0.0.1:21000",
         g_config.sdk_url,
@@ -53,7 +53,7 @@ void load_config() {
 
     char buf[16];
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "REDIRECT_HTTP",
         "true",
         buf,
@@ -63,7 +63,7 @@ void load_config() {
     g_config.redirect_http = _stricmp(buf, "true") == 0;
 
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "IL2CPP_STRING_NEW_LEN_PAT",
         "E8 ? ? ? ? EB ? 31 C0 48 89 06 48 8B 47 ? 48 89 46 ? F2 0F 10 47",
         g_config.il2cpp_string_new_len_pat,
@@ -72,16 +72,16 @@ void load_config() {
     );
 
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "MAKE_INITIAL_URL_PAT",
-        "E8 ? ? ? ? 48 89 F9 48 89 C2 E8 ? ? ? ? 48 89 F9 4C 89 F2 E8 ? ? ? ? 48",
+        "55 41 56 56 57 53 48 81 EC 90 00 00 00 48 8D AC 24 ? ? ? ? 48 C7 45 ? ? ? ? ? 48 85 C9 74",
         g_config.make_initial_url_pat,
         256,
         ini_path
     );
 
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "SET_DITHER_PAT",
         "E8 ? ? ? ? 84 C0 75 ? C7 43",
         g_config.set_dither_pat,
@@ -90,7 +90,7 @@ void load_config() {
     );
 
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "APN_ALLOC_PAT",
         "E8 ? ? ? ? 41 89 BF",
         g_config.apn_alloc_pat,
@@ -99,7 +99,7 @@ void load_config() {
     );
 
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "SDK_PUBLIC_KEY_PAT",
         "48 8B 0D ? ? ? ? 4C 89 E2 E8 ? ? ? ? 48 89 C6 48 8B 0D ? ? ? ? E8 ? ? ? ? 48 89 C7 48 8B 0D",
         g_config.sdk_public_key_pat,
@@ -108,18 +108,18 @@ void load_config() {
     );
 
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "SDK_PUBLIC_KEY_XML",
-        "",
+        "<RSAKeyValue><Exponent>AQAB</Exponent><Modulus>hEegnKISgDas5VTuRBUlixB+bvmPvXKa3kVO22UEZjPGMUFLmIl3DhH+dsZo7qJn/GfJCUkP1FA0MJ5Bj8PX8IatLJKIJ9dMCNdnAlkXTlMg86QQAhHZN83vP4swj5ILcrGNKl3YAZ49fvzo7nheuTt0/40f0HkHdNa1dUHECBs=</Modulus></RSAKeyValue>",
         g_config.sdk_public_key_xml,
         4096,
         ini_path
     );
 
     GetPrivateProfileStringA(
-        "umpdc",
+        "echium",
         "SDK_PUBLIC_KEY_PEM",
-        "",
+        "-----BEGIN PUBLIC KEY-----\\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCER6CcohKANqzlVO5EFSWLEH5u\\n+Y+9cpreRU7bZQRmM8YxQUuYiXcOEf52xmjuomf8Z8kJSQ/UUDQwnkGPw9fwhq0s\\nkogn10wI12cCWRdOUyDzpBACEdk3ze8/izCPkgtysY0qXdgBnj1+/OjueF65O3T/\\njR/QeQd01rV1QcQIGwIDAQAB\\n-----END PUBLIC KEY-----",
         g_config.sdk_public_key_pem,
         4096,
         ini_path

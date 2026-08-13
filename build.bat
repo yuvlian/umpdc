@@ -1,1 +1,1 @@
-gcc dllmain.c -o umpdc.dll -static-libgcc -shared -O3 -s -flto -march=native -mtune=native -Wl,--gc-sections -fdata-sections -ffunction-sections -lpsapi -lws2_32
+zig cc dllmain.c -o echium.dll -shared -O3 -s -lpsapi -lws2_32

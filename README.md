@@ -1,15 +1,14 @@
-# umpdc
+# echium
 
-a simple patch for hsr. it does http redirect, dither removal, and RSA patch.
+patch for playing honkai: star rail private server. it does http redirect, removes dither/censhorship, and patches RSA
 
 ### how to use:
 
-1. place `umpdc.dll` and `umpdc.ini` in the same directory as the game executable. u can get from releases or build it yourself.
-2. modify `umpdc.ini` as needed
-3. launch the game
+1. build (or download from releases)
+2. put `.dll` file and `.ini` file in same directory as StarRail.exe
+3. rename `.dll` file to `umpdc.dll` and modify `.ini` file as needed
+4. launch the game
 
 ### notes:
 
-this patch was last tested on 4.2.51
-
-patterns seem to have changed on 4.2.53, ill update when i feel like it
+patterns for RSA related stuff might be outdated later on, im currently only updating the ones needed for my PS (http redirect)
