@@ -1,14 +1,36 @@
 # echium
 
-patch for playing honkai: star rail private server. it does http redirect, removes dither/censhorship, and patches RSA
+patch for playing honkai: star rail private server made with using https://github.com/yuvlian/il2cure :D
 
-### how to use:
+last tested on hsr 4.4.55
 
-1. build (or download from releases)
-2. put `.dll` file and `.ini` file in same directory as StarRail.exe
-3. rename `.dll` file to `umpdc.dll` and modify `.ini` file as needed
-4. launch the game
+## wyg?
+- **http redirect**
+- **rsa patch**
+- **censorship patch**
 
-### notes:
+## reqs
 
-patterns for RSA related stuff might be outdated later on, im currently only updating the ones needed for my PS (http redirect)
+- odin https://github.com/odin-lang/Odin/releases
+- git https://git-scm.com/install for installing il2cure (see `deps.ps1`)
+
+## quick start
+
+clone repo then just run `deps.ps1` and `build.ps1`. after that copy the `echium.dll` to same folder as `game.exe`, then rename the dll to `umpdc.dll`.
+
+for configuration, you can copy `Echium.json` too and modify as needed.
+
+you can also get prebuilt from https://github.com/yuvlian/echium/releases/
+
+## packages
+
+| package | what it does |
+|---------|--------------|
+| `main.odin` | dll entry |
+| `apn_helper.odin` | helper for apn.dll |
+| `cfg/` | json config |
+| `patches/` | patch source files |
+
+## license
+
+MIT

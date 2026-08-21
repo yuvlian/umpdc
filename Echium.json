@@ -1,0 +1,12 @@
+{
+	"log_level": 1,
+	"redirect_http": true,
+	"sdk_url": "http://127.0.0.1:21000",
+	"il2cpp_string_new_len_pat": [232, 65535, 65535, 65535, 65535, 235, 65535, 49, 192, 72, 137, 6, 72, 139, 71, 65535, 72, 137, 70, 65535, 242, 15, 16, 71],
+	"make_initial_url_pat": [85, 65, 86, 86, 87, 83, 72, 129, 236, 144, 0, 0, 0, 72, 141, 172, 36, 65535, 65535, 65535, 65535, 72, 199, 69, 65535, 65535, 65535, 65535, 65535, 72, 133, 201, 116],
+	"set_dither_pat": [232, 65535, 65535, 65535, 65535, 132, 192, 117, 65535, 199, 67],
+	"apn_alloc_pat": [232, 65535, 65535, 65535, 65535, 65, 137, 191],
+	"sdk_public_key_pat": [72, 139, 13, 65535, 65535, 65535, 65535, 76, 137, 226, 232, 65535, 65535, 65535, 65535, 72, 137, 198, 72, 139, 13, 65535, 65535, 65535, 65535, 232, 65535, 65535, 65535, 65535, 72, 137, 199, 72, 139, 13],
+	"sdk_public_key_xml": "<RSAKeyValue><Exponent>AQAB</Exponent><Modulus>hEegnKISgDas5VTuRBUlixB+bvmPvXKa3kVO22UEZjPGMUFLmIl3DhH+dsZo7qJn/GfJCUkP1FA0MJ5Bj8PX8IatLJKIJ9dMCNdnAlkXTlMg86QQAhHZN83vP4swj5ILcrGNKl3YAZ49fvzo7nheuTt0/40f0HkHdNa1dUHECBs=</Modulus></RSAKeyValue>",
+	"sdk_public_key_pem": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCER6CcohKANqzlVO5EFSWLEH5u\n+Y+9cpreRU7bZQRmM8YxQUuYiXcOEf52xmjuomf8Z8kJSQ/UUDQwnkGPw9fwhq0s\nkogn10wI12cCWRdOUyDzpBACEdk3ze8/izCPkgtysY0qXdgBnj1+/OjueF65O3T/\njR/QeQd01rV1QcQIGwIDAQAB\n-----END PUBLIC KEY-----"
+}

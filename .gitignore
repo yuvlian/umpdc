@@ -2,3 +2,7 @@
 *.dll
 *.log
 *.lib
+*.obj
+*.so
+*.dylib
+refs/
